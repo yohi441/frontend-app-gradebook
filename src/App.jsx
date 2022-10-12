@@ -12,6 +12,7 @@ import {MyHeader} from 'header/MyHeader'
 import {MyFooter} from 'footer/MyFooter'
 import GradebookPage from 'containers/GradebookPage';
 import './App.scss';
+import './output.css';
 
 const App = () => (
   <AppProvider store={store}>
