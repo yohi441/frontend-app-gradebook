@@ -8,6 +8,8 @@ import Header from '@edx/frontend-component-header';
 
 import { routePath } from 'data/constants/app';
 import store from 'data/store';
+import {MyHeader} from 'header/MyHeader'
+import {MyFooter} from 'footer/MyFooter'
 import GradebookPage from 'containers/GradebookPage';
 import './App.scss';
 
@@ -15,7 +17,7 @@ const App = () => (
   <AppProvider store={store}>
     <Router>
       <div>
-        <Header />
+        <MyHeader />
         <main>
           <Switch>
             <Route
@@ -25,7 +27,7 @@ const App = () => (
             />
           </Switch>
         </main>
-        <Footer logo={process.env.LOGO_POWERED_BY_OPEN_EDX_URL_SVG} />
+        <MyFooter />
       </div>
     </Router>
   </AppProvider>
